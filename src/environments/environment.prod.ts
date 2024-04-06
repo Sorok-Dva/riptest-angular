@@ -10,7 +10,7 @@ export const ENVIRONMENT = {
 		},
 		jsonplaceholder: {
 			apiUrls: {
-				newPost: 'https://jsonplaceholder.typicode.com/posts'
+				newPost: 'https://hook.eu2.make.com/geebmmjt36oglioinnfsthpn7wbbklrg'
 			}
 		}
 	},
