@@ -12,6 +12,11 @@ export const ENVIRONMENT = {
 				dateTime: 'http://date.jsontest.com'
 			},
 		},
+		jsonplaceholder: {
+			apiUrls: {
+				newPost: 'https://jsonplaceholder.typicode.com/posts'
+			}
+		}
 	},
 };
 

@@ -1,0 +1,43 @@
+.new-post-container {
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 20px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+
+	.mat-mdc-form-field {
+		display: inherit !important;
+	}
+
+	textarea {
+		resize: vertical;
+		height: 250px;
+	}
+
+	.mat-form-field {
+		width: 100%;
+		margin-top: 20px;
+
+		.mat-input-element {
+			font-size: 16px;
+			padding: 10px;
+		}
+	}
+
+	button {
+		width: 100%;
+		margin-top: 20px;
+	}
+
+
+	.alert {
+		margin-top: 20px;
+		padding: 15px;
+		border-radius: 4px;
+		background-color: #dff0d8;
+		color: #3c763d;
+		border: 1px solid #d0e9c6;
+	}
+}

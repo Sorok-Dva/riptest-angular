@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { LOCALE_ID } from '@angular/core';
 
@@ -14,7 +15,6 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { ShowIpComponent } from './tools/show-ip/show-ip.component';
 import { ShowDateTimeComponent } from './tools/show-datetime/show-datetime.component';
-
 
 @NgModule({
 	declarations: [
@@ -33,6 +33,9 @@ import { ShowDateTimeComponent } from './tools/show-datetime/show-datetime.compo
 		MatToolbarModule,
 		MatButtonModule,
 		MatMenuModule,
+
+		FormsModule,
+		ReactiveFormsModule
 	],
 	providers: [
 		{ provide: LOCALE_ID, useValue: 'fr' }

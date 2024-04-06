@@ -4,7 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { ShowIpComponent } from './tools/show-ip/show-ip.component';
 import { ShowDateTimeComponent } from './tools/show-datetime/show-datetime.component';
-
+import { NewPostComponent } from './features/new-post/new-post.component';
 
 const ROUTES: Routes = [
 	{
@@ -18,7 +18,11 @@ const ROUTES: Routes = [
 	{
 		path: 'tools/show-datetime',
 		component: ShowDateTimeComponent
-	}
+	},
+	{
+		path: 'post/new',
+		loadChildren: () => import('./features/new-post/new-post.module').then(m => m.NewPostModule)
+	},
 ];
 
 
