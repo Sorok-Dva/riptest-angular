@@ -9,6 +9,7 @@ export const ENVIRONMENT = {
 		jsontest: {
 			apiUrls: {
 				ip: 'http://ip.jsontest.com',
+				dateTime: 'http://date.jsontest.com'
 			},
 		},
 	},

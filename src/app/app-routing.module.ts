@@ -1,8 +1,9 @@
-import { NgModule } from '@angular/core'
-import { Routes, RouterModule } from '@angular/router'
+import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
 
-import { HomeComponent } from './home/home.component'
-import { ShowIpComponent } from './tools/show-ip/show-ip.component'
+import { HomeComponent } from './home/home.component';
+import { ShowIpComponent } from './tools/show-ip/show-ip.component';
+import { ShowDateTimeComponent } from './tools/show-datetime/show-datetime.component';
 
 
 const ROUTES: Routes = [
@@ -13,8 +14,12 @@ const ROUTES: Routes = [
 	{
 		path: 'tools/show-ip',
 		component: ShowIpComponent
+	},
+	{
+		path: 'tools/show-datetime',
+		component: ShowDateTimeComponent
 	}
-]
+];
 
 
 @NgModule({

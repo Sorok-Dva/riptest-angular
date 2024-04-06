@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
+import { LOCALE_ID } from '@angular/core';
 
 import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -12,6 +13,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { ShowIpComponent } from './tools/show-ip/show-ip.component';
+import { ShowDateTimeComponent } from './tools/show-datetime/show-datetime.component';
 
 
 @NgModule({
@@ -19,6 +21,7 @@ import { ShowIpComponent } from './tools/show-ip/show-ip.component';
 		AppComponent,
 		HomeComponent,
 		ShowIpComponent,
+		ShowDateTimeComponent,
 	],
 	imports: [
 		BrowserModule,
@@ -31,7 +34,9 @@ import { ShowIpComponent } from './tools/show-ip/show-ip.component';
 		MatButtonModule,
 		MatMenuModule,
 	],
-	providers: [],
+	providers: [
+		{ provide: LOCALE_ID, useValue: 'fr' }
+	],
 	bootstrap: [AppComponent],
 })
 export class AppModule {}
