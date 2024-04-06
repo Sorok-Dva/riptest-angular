@@ -2,9 +2,6 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { HomeComponent } from './home/home.component';
-import { ShowIpComponent } from './tools/show-ip/show-ip.component';
-import { ShowDateTimeComponent } from './tools/show-datetime/show-datetime.component';
-import { NewPostComponent } from './features/new-post/new-post.component';
 
 const ROUTES: Routes = [
 	{
@@ -12,12 +9,8 @@ const ROUTES: Routes = [
 		component: HomeComponent
 	},
 	{
-		path: 'tools/show-ip',
-		component: ShowIpComponent
-	},
-	{
-		path: 'tools/show-datetime',
-		component: ShowDateTimeComponent
+		path: 'tools',
+		loadChildren: () => import('./tools/tools.module').then(m => m.ToolsRoutingModule)
 	},
 	{
 		path: 'post/new',
