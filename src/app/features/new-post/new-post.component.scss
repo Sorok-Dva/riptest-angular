@@ -11,9 +11,29 @@
 		display: inherit !important;
 	}
 
+	label {
+		display: block;
+		margin-bottom: 8px;
+		font-weight: bold;
+	}
+
+	input,
 	textarea {
-		resize: vertical;
-		height: 250px;
+		display: block;
+		width: 100%;
+		padding: 8px;
+		border-radius: 4px;
+		font-size: 16px;
+		line-height: 1.5;
+
+		&:focus {
+			outline: none;
+			box-shadow: 0 0 2px 1px rgba(#009688, 0.5);
+		}
+	}
+
+	textarea {
+		height: 150px;
 	}
 
 	.mat-form-field {
@@ -30,7 +50,6 @@
 		width: 100%;
 		margin-top: 20px;
 	}
-
 
 	.alert {
 		margin-top: 20px;
